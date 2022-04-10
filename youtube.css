@@ -188,7 +188,7 @@ button{
     .play-preview{
         display: grid;
         grid: "play preview";
-        grid-template-columns: 1fr 40%;
+        grid-template-columns: 1fr 35%;
         margin: 5px 0;
         background-color: #f3f2f2;
         padding: 10px 80px;
@@ -200,10 +200,10 @@ button{
     .play-preview{
         display: grid;
         grid: "play preview";
-        grid-template-columns: 1fr 40%;
+        grid-template-columns: 1fr 32%;
         margin: 5px 0;
         background-color: #f3f2f2;
-        padding: 10px 80px;
+        padding: 10px 30px 10px 20px;
         gap: 10px;
     }
 }
@@ -231,7 +231,7 @@ button{
     background-color: #f3f2f2;
     gap: 10px;   
     margin-top: -20px;
-    border-bottom: 2px solid rgb(223, 223, 223);
+    border-bottom: 1px solid #dfdfdf;
 }
 
 
@@ -257,42 +257,91 @@ button{
 
 p .com2{
     margin-left: 40px;
+    cursor: pointer;
 }
 p .com1{
     margin-right: 40px;
 }
 .playing-video input[type="text"]{
-    min-width: 90%;
     border-width: 0 0 1px;
     background-color: #f3f2f2;
-    margin-left: 20px;
+    margin-top: -20px;
+    height: 1.2rem;
+    align-self: center;
 }
-.playing-video input[type="text"]:focus-within{
-    border-width: 0 0 2px;
-}
+
 .add-cancel{
     text-align: right;
-    margin-top: 20px;
+    margin-top: -6px;
 }
 
 .add-cancel .add{
     border-radius: 1px;
-    background-color: #a2a2a2;
+    background-color: #545454;
     color: #ffffff;
     padding: 8px;
     cursor: pointer;
 }
 .add-cancel .cancel{
     margin-right: 20px;
+    cursor: pointer;
 }
 
+.text{
+    display: grid;
+    grid: "play preview";
+    grid-template-columns: 12% 88%;
+    background-color: #f3f2f2;  
+}
+.text img{
+    width: 50px;
+    height: 50px;
+    border-radius: 90px;
+    cursor: pointer;
+}
+
+.comment-text{
+    margin-top: 40px;
+    display: grid;
+    grid: "play preview";
+    grid-template-columns: 12% 88%;
+    background-color: #f3f2f2;  
+}
+.comment-text img{
+    width: 45px;
+    height: 45px;
+    border-radius: 90px;
+    cursor: pointer;
+}
+.user-comment{
+    margin-top: -14px;
+    
+}
+
+.user-comment .month{
+    margin-left: 20px;
+    color: #545454;
+    font-size: small;
+}
+
+p .like{
+    font-size: small;
+    color: #545454;
+    cursor: pointer;
+}
+p .likes{
+    margin-left: 20px;
+    font-size: small;
+    color: #545454;
+    cursor: pointer;
+}
 .odin{
     display: grid;
     grid: "play preview";
     grid-template-columns: 12% 1fr;
     background-color: #f3f2f2;
     gap: 10px;   
-    border-bottom: 2px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
     margin-top: 16px;
 }
 .odin img{
