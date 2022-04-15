@@ -10,10 +10,13 @@
 </head>
 <body>
     <div class="main-page">
+        <div id="side-bar" class="logo">
+            
+        </div>
         <!--nav section starts here-->
         <div class="nav-bar">
             <div class="logo">
-                <span class="more">&#9776</span>
+                <span class="more" id="more">☰</span>
                 <span class="image"><img src="/images/logo.png" alt="youtube logo" title="youtube logo"></span>
             </div>
             <div class="blank"></div>
@@ -75,19 +78,19 @@
                         <span class="com1">33 Comments</span>
                         <span class="com2"><i class="fa-solid fa-sort"></i>SORT BY</span>
                     </p>
-                    <div class="text">
+                    <div class="text" id="text">
                         <img src="/images/thumb8.jpg" alt="theOdinProject" title="odin">
-                        <input type="text" placeholder="Add comment..." name="search">
+                        <input type="text" placeholder="Add comment..." name="search" id="myInput">
                     </div>
                     <div class="add-cancel">
                         <span class="cancel">Cancel</span>
-                        <span class="add">Comment</span>
+                        <span class="add" id="add">Comment</span>
                     </div>
                     <div class="comment-text">
                         <img src="/images/thumb6.jpg" alt="theOdinProject" title="odin">
                         <div class="user-comment">
                             <p><span class="name">ndikumana isaie</span><span class="month">2 days ago</span></p>
-                            <p>Ndikumana isaie will be a great microverse student</p>
+                            <p id="my-comment">Ndikumana isaie will be a great microverse student</p>
                             <p>
                                 <span class="like"><i class="fa-regular fa-thumbs-up"></i>135</span>
                                 <span class="likes"><i class="fa-regular fa-thumbs-down"></i></span>
@@ -145,5 +148,6 @@
         </div>
         <!--end of play preview section-->
     </div>
+    <script src="/js/sidemenu.js"></script>
 </body>
 </html>

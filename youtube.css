@@ -4,6 +4,16 @@ body{
     background-color:#ffffff;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+/* .main-page #side-bar{
+    border: 2px solid #a5a5cb;
+    height: 500px;
+    width: 0;
+    position: absolute;
+    transition: 1s;
+    -webkit-transition: 1s;
+    
+} */
+
 /*nav-bar styles*/
 .nav-bar{
     display: grid;
@@ -142,12 +152,13 @@ button{
 .more{
     position: relative;
     top: -25px;
-    
+    cursor: pointer; 
 }
 
 .logo img{
     width: 60%;
     height: 60px; 
+    cursor: pointer;
 }
 
 /*end of nav-bar styles*/
@@ -208,17 +219,6 @@ button{
     }
 }
 
-/* .play-preview{
-    display: grid;
-    grid: "play preview";
-    grid-template-columns: 1fr 40%;
-    margin: 5px 0
-    background-color: #f3f2f2;
-    padding: 10px 80px;
-    gap: 10px;
-} */
-
-
 /*playing video styles*/
 .playing-video{
     padding: 20px;
@@ -277,16 +277,22 @@ p .com1{
 
 .add-cancel .add{
     border-radius: 1px;
-    background-color: #545454;
-    color: #ffffff;
+    background-color: #cfcfcf;
+    color: #000000;
     padding: 8px;
     cursor: pointer;
+    text-transform: uppercase;
 }
 .add-cancel .cancel{
     margin-right: 20px;
     cursor: pointer;
+    text-transform: uppercase;
 }
-
+.text input[type = "text"]:focus{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #080505;
+}
 .text{
     display: grid;
     grid: "play preview";
