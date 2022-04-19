@@ -26,6 +26,8 @@ body{
     text-align: center;
 }
 
+
+
 @media screen and (max-width: 500px){
 
     .nav-bar{
@@ -109,6 +111,7 @@ body{
         display: none;  
     }
 }
+
 .right-buttons{
     /* position: absolute;
     right: 30px;
